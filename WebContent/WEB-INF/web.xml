@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>JavaWebDevelop</display-name>
+  <servlet>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.helloweenvsfei.servlet.FirstServlet</servlet-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+	  <servlet-name>RequestServlet</servlet-name>
+	  <servlet-class>
+		  com.helloweenvsfei.servlet.RequestServlet
+	  </servlet-class>
+  </servlet>  
+  
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/servlet/FirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+	<servlet-name>RequestServlet</servlet-name>
+	<url-pattern>/servlet/RequestServlet</url-pattern>
+  </servlet-mapping>  
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>

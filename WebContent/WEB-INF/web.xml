@@ -38,7 +38,19 @@
 			<param-name>babyface</param-name>
 			<param-value>babyface</param-value>
 		</init-param>
-	</servlet>    
+	</servlet>  
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.UploadServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProgressUploadServlet</servlet-name>
+		<servlet-class>
+			com.helloweenvsfei.servlet.ProgressUploadServlet
+		</servlet-class>
+	</servlet>		  
   
 	<servlet-mapping>
 	    <servlet-name>FirstServlet</servlet-name>
@@ -56,6 +68,14 @@
 		<servlet-name>InitParamServlet</servlet-name>
 		<url-pattern>/servlet/InitParamServlet</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/servlet/UploadServlet</url-pattern>
+	</servlet-mapping>		 
+	<servlet-mapping>
+		<servlet-name>ProgressUploadServlet</servlet-name>
+		<url-pattern>/servlet/ProgressUploadServlet</url-pattern>
+	</servlet-mapping>	
 		 
 	<welcome-file-list>
 	  <welcome-file>index.html</welcome-file>
